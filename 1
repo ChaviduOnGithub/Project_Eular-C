@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main (void)
+{
+    int count = 0, count3 = 0, count5 = 0, sum = 0; 
+
+    for(count=0;count<1000;count++)
+    {
+        if(count % 3 == 0)
+        {
+            count3 = count+count3;
+        }
+        else if (count % 5 == 0)
+        {
+            count5 = count+count5;
+        }
+    }
+
+    sum = count3 + count5;
+    printf("%d",sum);
+
+    return 0;
+}
